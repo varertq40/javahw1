@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class task3 {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args){
-        int num1 = numEntry();
-        int num2 = numEntry();
-        char operat = entryOperat();
-        int res = calc(num1, num2, operat);
-        System.out.println("Результат: " + res);
+        while (true){
+            int num1 = numEntry();
+            int num2 = numEntry();
+            char operat = entryOperat();
+            int res = calc(num1, num2, operat);
+            System.out.println("Результат: " + res);
+        }
     }
 
     public static int numEntry(){
